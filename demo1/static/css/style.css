@@ -1,0 +1,56 @@
+.custom-carousel-item {
+    height: 300px; /* Set your desired height */
+}
+
+.custom-carousel-image {
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add smooth transition effect */
+}
+
+.footer a:hover {
+    color: #28a745; /* Change the link color on hover */
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease; /* Add smooth transition effect */
+}
+
+.social-icons a:hover {
+    color: #28a745; /* Change the icon color on hover */
+}

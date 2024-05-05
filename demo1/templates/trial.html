@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-group">
+        <select id="state" name="state" class="form-control">
+            <!-- Options will be populated dynamically by JavaScript -->
+        </select>
+        <br>
+    </div>
+
+
+
+<script>
+    const states = [
+    'Andaman and Nicobar Islands', 'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh',
+    'Chhattisgarh', 'Dadra and Nagar Haveli', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir',
+    'Jharkhand', 'Karnataka', 'Kerala', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram',
+    'Nagaland', 'Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura',
+    'Uttar Pradesh', 'Uttarakhand', 'West Bengal'
+];
+
+const selectElement = document.getElementById('state');
+
+// Populate the select dropdown with options from the 'states' array
+states.forEach(state => {
+    const option = document.createElement('option');
+    option.text = state;
+    option.value = state;
+    selectElement.appendChild(option);
+});
+</script>
+
+
+</body>
+</body>
+</html>
